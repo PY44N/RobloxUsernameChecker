@@ -35,11 +35,12 @@
             this.TotalCount = new System.Windows.Forms.Label();
             this.Link = new System.Windows.Forms.Label();
             this.Credits = new System.Windows.Forms.Label();
+            this.OutOfDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Input
             // 
-            this.Input.Location = new System.Drawing.Point(12, 12);
+            this.Input.Location = new System.Drawing.Point(12, 22);
             this.Input.Name = "Input";
             this.Input.Size = new System.Drawing.Size(423, 184);
             this.Input.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             // Output
             // 
-            this.Output.Location = new System.Drawing.Point(12, 206);
+            this.Output.Location = new System.Drawing.Point(12, 216);
             this.Output.Name = "Output";
             this.Output.Size = new System.Drawing.Size(423, 184);
             this.Output.TabIndex = 1;
@@ -55,7 +56,7 @@
             // 
             // Start
             // 
-            this.Start.Location = new System.Drawing.Point(12, 396);
+            this.Start.Location = new System.Drawing.Point(12, 406);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(423, 31);
             this.Start.TabIndex = 2;
@@ -66,7 +67,7 @@
             // AvailableCount
             // 
             this.AvailableCount.AutoSize = true;
-            this.AvailableCount.Location = new System.Drawing.Point(143, 430);
+            this.AvailableCount.Location = new System.Drawing.Point(143, 440);
             this.AvailableCount.Name = "AvailableCount";
             this.AvailableCount.Size = new System.Drawing.Size(62, 13);
             this.AvailableCount.TabIndex = 3;
@@ -75,7 +76,7 @@
             // TotalCount
             // 
             this.TotalCount.AutoSize = true;
-            this.TotalCount.Location = new System.Drawing.Point(242, 430);
+            this.TotalCount.Location = new System.Drawing.Point(242, 440);
             this.TotalCount.Name = "TotalCount";
             this.TotalCount.Size = new System.Drawing.Size(43, 13);
             this.TotalCount.TabIndex = 4;
@@ -84,7 +85,7 @@
             // Link
             // 
             this.Link.AutoSize = true;
-            this.Link.Location = new System.Drawing.Point(91, 463);
+            this.Link.Location = new System.Drawing.Point(91, 473);
             this.Link.Name = "Link";
             this.Link.Size = new System.Drawing.Size(260, 13);
             this.Link.TabIndex = 5;
@@ -93,17 +94,26 @@
             // Credits
             // 
             this.Credits.AutoSize = true;
-            this.Credits.Location = new System.Drawing.Point(117, 450);
+            this.Credits.Location = new System.Drawing.Point(117, 460);
             this.Credits.Name = "Credits";
             this.Credits.Size = new System.Drawing.Size(205, 13);
             this.Credits.TabIndex = 6;
             this.Credits.Text = "Open Source Username Checker by Pyan";
             // 
+            // OutOfDate
+            // 
+            this.OutOfDate.AutoSize = true;
+            this.OutOfDate.Location = new System.Drawing.Point(143, 6);
+            this.OutOfDate.Name = "OutOfDate";
+            this.OutOfDate.Size = new System.Drawing.Size(0, 13);
+            this.OutOfDate.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 485);
+            this.ClientSize = new System.Drawing.Size(447, 495);
+            this.Controls.Add(this.OutOfDate);
             this.Controls.Add(this.Credits);
             this.Controls.Add(this.Link);
             this.Controls.Add(this.TotalCount);
@@ -129,6 +139,7 @@
         private System.Windows.Forms.Label TotalCount;
         private System.Windows.Forms.Label Link;
         private System.Windows.Forms.Label Credits;
+        private System.Windows.Forms.Label OutOfDate;
     }
 }
 
