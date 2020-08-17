@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace RobloxUsernameChecker
 {
@@ -21,7 +15,8 @@ namespace RobloxUsernameChecker
                 {
                     return client.DownloadString(Link);
                 }
-            } else
+            }
+            else
             {
                 return "1";
             }

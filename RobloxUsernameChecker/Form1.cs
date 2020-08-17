@@ -1,8 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -32,7 +30,8 @@ namespace RobloxUsernameChecker
             if (OnlineVersion != ProgramVersion)
             {
                 OutOfDate.Text = "This version is out of date";
-            } else
+            }
+            else
             {
                 OutOfDate.Text = "This version is up to date";
             }
@@ -54,8 +53,8 @@ namespace RobloxUsernameChecker
                 {
                     if (ex.ToString().Contains("The given key was not present in the dictionary") & name.Length > 2 & name.Length <= 20)
                         working = working + name + "\n";
-                        ++this.available;
-                        this.AvailableCount.Text = "Available: " + this.available.ToString();
+                    ++this.available;
+                    this.AvailableCount.Text = "Available: " + this.available.ToString();
                 }
                 ++this.total;
                 this.TotalCount.Text = "Total: " + this.total.ToString();
