@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,12 @@ namespace RobloxUsernameChecker
         public Form1()
         {
             InitializeComponent();
+
+            //Downloads Newtonsoft.Json.dll
+            using (var client = new WebClient())
+            {
+                client.DownloadFile("https://github.com/PY44N/FileDownloads/raw/master/Newtonsoft.Json.dll", "Newtonsoft.Json.dll");
+            }
         }
 
         private async Task<string> CheckName(string[] names)
