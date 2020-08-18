@@ -34,8 +34,7 @@
             this.Start = new System.Windows.Forms.Button();
             this.AvailableCount = new System.Windows.Forms.Label();
             this.TotalCount = new System.Windows.Forms.Label();
-            this.Link = new System.Windows.Forms.Label();
-            this.Credits = new System.Windows.Forms.Label();
+            this.Link = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // Input
@@ -85,27 +84,19 @@
             // Link
             // 
             this.Link.AutoSize = true;
-            this.Link.Location = new System.Drawing.Point(91, 473);
+            this.Link.Location = new System.Drawing.Point(118, 463);
             this.Link.Name = "Link";
-            this.Link.Size = new System.Drawing.Size(260, 13);
-            this.Link.TabIndex = 5;
-            this.Link.Text = "https://github.com/PY44N/RobloxUsernameChecker";
-            // 
-            // Credits
-            // 
-            this.Credits.AutoSize = true;
-            this.Credits.Location = new System.Drawing.Point(117, 460);
-            this.Credits.Name = "Credits";
-            this.Credits.Size = new System.Drawing.Size(205, 13);
-            this.Credits.TabIndex = 6;
-            this.Credits.Text = "Open Source Username Checker by Pyan";
+            this.Link.Size = new System.Drawing.Size(205, 13);
+            this.Link.TabIndex = 7;
+            this.Link.TabStop = true;
+            this.Link.Text = "Open Source Username Checker by Pyan";
+            this.Link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Link_LinkClicked_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 495);
-            this.Controls.Add(this.Credits);
+            this.ClientSize = new System.Drawing.Size(447, 487);
             this.Controls.Add(this.Link);
             this.Controls.Add(this.TotalCount);
             this.Controls.Add(this.AvailableCount);
@@ -129,8 +120,7 @@
         private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Label AvailableCount;
         private System.Windows.Forms.Label TotalCount;
-        private System.Windows.Forms.Label Link;
-        private System.Windows.Forms.Label Credits;
+        private System.Windows.Forms.LinkLabel Link;
     }
 }
 

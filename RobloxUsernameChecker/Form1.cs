@@ -64,5 +64,10 @@ namespace RobloxUsernameChecker
             richTextBox.Text = await this.CheckName(names);
             richTextBox = (RichTextBox)null;
         }
+
+        private void Link_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/PY44N/RobloxUsernameChecker");
+        }
     }
 }
