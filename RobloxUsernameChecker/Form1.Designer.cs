@@ -36,12 +36,11 @@
             this.TotalCount = new System.Windows.Forms.Label();
             this.Link = new System.Windows.Forms.Label();
             this.Credits = new System.Windows.Forms.Label();
-            this.OutOfDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Input
             // 
-            this.Input.Location = new System.Drawing.Point(12, 22);
+            this.Input.Location = new System.Drawing.Point(12, 12);
             this.Input.Name = "Input";
             this.Input.Size = new System.Drawing.Size(423, 184);
             this.Input.TabIndex = 0;
@@ -101,20 +100,11 @@
             this.Credits.TabIndex = 6;
             this.Credits.Text = "Open Source Username Checker by Pyan";
             // 
-            // OutOfDate
-            // 
-            this.OutOfDate.AutoSize = true;
-            this.OutOfDate.Location = new System.Drawing.Point(143, 6);
-            this.OutOfDate.Name = "OutOfDate";
-            this.OutOfDate.Size = new System.Drawing.Size(0, 13);
-            this.OutOfDate.TabIndex = 7;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 495);
-            this.Controls.Add(this.OutOfDate);
             this.Controls.Add(this.Credits);
             this.Controls.Add(this.Link);
             this.Controls.Add(this.TotalCount);
@@ -141,7 +131,6 @@
         private System.Windows.Forms.Label TotalCount;
         private System.Windows.Forms.Label Link;
         private System.Windows.Forms.Label Credits;
-        private System.Windows.Forms.Label OutOfDate;
     }
 }
 
