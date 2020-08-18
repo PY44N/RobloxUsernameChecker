@@ -23,18 +23,6 @@ namespace RobloxUsernameChecker
             {
                 client.DownloadFile("https://github.com/PY44N/FileDownloads/raw/master/Newtonsoft.Json.dll", "Newtonsoft.Json.dll");
             }
-
-            //Version Check
-            string OnlineVersion = Version.Check(true);
-            string ProgramVersion = Version.Check(false);
-            if (OnlineVersion != ProgramVersion)
-            {
-                OutOfDate.Text = "This version is out of date";
-            }
-            else
-            {
-                OutOfDate.Text = "This version is up to date";
-            }
         }
 
         private async Task<string> CheckName(string[] names)
