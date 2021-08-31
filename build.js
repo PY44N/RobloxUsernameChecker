@@ -1,4 +1,5 @@
 const fs = require("fs");
+const zip = require("zip-a-folder").zip;
 
 if (!fs.existsSync("builds")) fs.mkdirSync("builds");
 
@@ -10,6 +11,8 @@ fs.renameSync("index-win.exe", "./builds/win/RobloxUsernameCheckerWin.exe");
 fs.renameSync("index-macos", "./builds/mac/RobloxUsernameCheckerMac");
 fs.renameSync("index-linux", "./builds/linux/RobloxUsernameCheckerLinux");
 
-fs.writeFileSync("./builds/win/usernames.txt", "");
-fs.writeFileSync("./builds/mac/usernames.txt", "");
-fs.writeFileSync("./builds/linux/usernames.txt", "");
+for (let os of ["win", "mac", "linux"]) {
+  fs.writeFileSync(`./builds/${os}/usernames.txt`, "");
+  zip(`./builds/${os}/`, `./builds/${os}.zip`);
+  fs.rmdirSync(`./builds/${os}/`, { recursive: true });
+}

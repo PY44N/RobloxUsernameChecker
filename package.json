@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "zip-a-folder": "^1.1.0"
   }
 }
