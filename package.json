@@ -1,0 +1,17 @@
+{
+  "name": "robloxusernamechecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg ./index.js && node build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.0.0"
+  }
+}
