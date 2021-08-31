@@ -2,8 +2,8 @@
 
 ## Downloads
 
-### [Windows]()
+### [Windows](https://github.com/PY44N/RobloxUsernameChecker/raw/master/builds/win.zip)
 
-### [Mac]()
+### [Mac](https://github.com/PY44N/RobloxUsernameChecker/raw/master/builds/mac.zip)
 
-### [Linux]()
+### [Linux](https://github.com/PY44N/RobloxUsernameChecker/raw/master/builds/linux.zip)
